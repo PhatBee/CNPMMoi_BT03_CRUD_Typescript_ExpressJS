@@ -4,14 +4,14 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export const sequelize = new Sequelize(
-  'node_fulltask',
+  'database_development',
   'root',
-  '1234567@a$',
+  '0000',
   {
     host: process.env.DB_HOST || 'localhost',
     dialect: 'mysql',
     logging: false,
-    // port: 3306
+    port: 3306
   }
 );
 

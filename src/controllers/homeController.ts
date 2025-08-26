@@ -83,7 +83,7 @@ const getEditCRUD = async (req: Request, res: Response, next: NextFunction) => {
     const userData = await CRUDService.getUserInfoById(userId);
     if (!userData) return res.status(404).send('User not found');
 
-    return res.render('users/editUser', { data: userData });
+    return res.render('users/updateUser', { data: userData });
   } catch (error) {
     return next(error);
   }
