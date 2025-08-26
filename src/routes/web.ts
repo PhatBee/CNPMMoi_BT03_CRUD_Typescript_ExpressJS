@@ -7,7 +7,7 @@ const router = express.Router();
 const initWebRoutes = (app: Express): void => {
   // cách 1: route trả chuỗi
   router.get('/', (_req, res) => {
-    return res.send('Nguyễn Hữu Trung');
+    return res.send('Ong Vĩnh Phát');
   });
 
   // cách 2: gọi controller
